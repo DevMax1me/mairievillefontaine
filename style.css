@@ -65,3 +65,21 @@ footer{background:var(--ink);color:#94a3b8;padding:32px 0}footer strong{color:#f
  .search{flex-direction:column}.cards,.grid4,.news{grid-template-columns:1fr}.news-big{grid-column:auto}
  .agenda li{flex-wrap:wrap}.agenda .btn{width:100%;text-align:center}section{padding:52px 0}
 }
+.rubriques{background:#fff}.rub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rub{background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:24px}.rub h3{font:700 1.1rem Fraunces,serif;color:var(--blue)}.rub ul{margin:0;padding:0;list-style:none;display:grid;gap:6px;color:var(--mute);font-size:.94rem}.rub li::before{content:"→ ";color:var(--red)}.rub a{color:var(--blue);font-weight:600}
+.page-hero{background:radial-gradient(800px 400px at 80% 0,#dbe6ff,transparent),#fff;padding:56px 0 40px}.page-hero h1{margin-bottom:.3em}
+.mayor-card{display:grid;grid-template-columns:200px 1fr;gap:28px;align-items:center;background:linear-gradient(160deg,var(--blue),#06163d);color:#fff;border-radius:var(--r);padding:28px;margin-bottom:48px}.mayor-card img{border-radius:16px;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%}.mayor-card h2{font-size:2rem;margin:0 0 .3em}.mayor-card p{color:#d6def5}.mayor-card .btn{background:#fff;color:var(--blue)}
+.elus{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.elu{display:flex;gap:14px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px}.elu small{display:block;color:var(--mute)}
+.av{flex:none;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:#fff;font-weight:700}.av.alt{background:var(--red)}
+.muted{color:var(--mute);font-size:.85rem;margin-top:20px}.cards.three{grid-template-columns:repeat(3,1fr)}
+@media (max-width:980px){.rub-grid,.elus,.cards.three{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:760px){.rub-grid,.elus,.cards.three{grid-template-columns:1fr}.mayor-card{grid-template-columns:1fr}.mayor-card img{width:160px}}
+/* photos détourées */
+.hero-photo::before{inset:0;border-radius:32px;background:radial-gradient(circle at 50% 30%,#3b6cf0,var(--blue) 70%)}
+.hero-photo{aspect-ratio:4/5;margin-top:24px}
+.hero-photo img{position:absolute;inset:auto 0 0 0;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;border-radius:0 0 32px 32px;box-shadow:none;top:-24px;bottom:auto;transform:none;z-index:1}
+.hero-photo{border-radius:32px}
+.hero-photo figcaption{z-index:2}
+.maire-photo{background:radial-gradient(circle at 50% 25%,#3b6cf0,#0b2a6f 75%);border-radius:var(--r);overflow:hidden;align-self:stretch;display:flex;align-items:flex-end}
+.maire-photo img{border-radius:0;aspect-ratio:auto;box-shadow:none;object-fit:contain}
+.mayor-card img{background:radial-gradient(circle at 50% 25%,#3b6cf0,#0b2a6f 75%);object-fit:contain;object-position:50% 100%}

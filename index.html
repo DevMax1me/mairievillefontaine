@@ -22,13 +22,12 @@
     </a>
     <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
     <nav id="nav" aria-label="Navigation principale">
-      <a href="#demarches">Démarches</a>
-      <a href="#actus">Actualités</a>
-      <a href="#maire">Le maire</a>
-      <a href="#projets">Projets</a>
-      <a href="#agenda">Agenda</a>
-      <a href="#contact">Contact</a>
-      <a class="btn small" href="#contact">Prendre rendez-vous</a>
+      <a href="#vie-municipale">Vie municipale</a>
+      <a href="#decouvrir">Découvrir la ville</a>
+      <a href="#demarches">Vie quotidienne</a>
+      <a href="#cadre">Cadre de vie</a>
+      <a href="#sortir">Sortir &amp; bouger</a>
+      <a class="btn small" href="#contact">Contact</a>
     </nav>
   </div>
 </header>
@@ -40,16 +39,16 @@
     <div class="hero-text reveal">
       <p class="eyebrow">Bienvenue à Villefontaine</p>
       <h1>Une ville qui bouge,<br><em>proche de vous.</em></h1>
-      <p class="lead">Je suis Maxime Didier, maire de Villefontaine. Ce site a été pensé pour que chaque démarche, chaque information et chaque projet de notre commune soient à portée de clic.</p>
+      <p class="lead">Je suis Maxime Didier, maire de Villefontaine (environ 18 000 habitants, Porte de l’Isère – CAPI). Ce site a été pensé pour que chaque démarche, chaque information et chaque projet de notre commune soient à portée de clic.</p>
       <form class="search" role="search" onsubmit="return false">
         <label class="sr" for="q">Rechercher</label>
         <input id="q" type="search" placeholder="Rechercher : carte d’identité, cantine, crèche…" autocomplete="off">
         <button class="btn" type="submit">Rechercher</button>
       </form>
-      <div class="chips"><span>Souvent demandé :</span><a href="#demarches">État civil</a><a href="#demarches">Inscription école</a><a href="#demarches">Urbanisme</a><a href="#agenda">Agenda</a></div>
+      <div class="chips"><span>Souvent demandé :</span><a href="#demarches">Portail Famille</a><a href="#demarches">Espace Citoyen</a><a href="elus.html">Les élus</a><a href="#agenda">Agenda</a></div>
     </div>
     <figure class="hero-photo reveal">
-      <img src="assets/maire-portrait.jpg" alt="Maxime Didier, maire de Villefontaine" width="900" height="1272">
+      <img src="assets/maire-portrait.webp" alt="Maxime Didier, maire de Villefontaine" width="900" height="1272">
       <figcaption><strong>Maxime Didier</strong>Maire de Villefontaine</figcaption>
     </figure>
   </div>
@@ -57,23 +56,37 @@
 </section>
 
 <section class="quick wrap" id="demarches">
-  <div class="section-head reveal"><h2>Mes démarches</h2><p>Les services du quotidien, simplement.</p></div>
+  <div class="section-head reveal"><h2>Accès rapides</h2><p>Vos services du quotidien, en un clic.</p></div>
   <div class="cards">
-    <a class="card reveal" href="#"><span class="ico">🪪</span><h3>État civil</h3><p>Acte de naissance, mariage, pièce d’identité.</p></a>
-    <a class="card reveal" href="#"><span class="ico">🎒</span><h3>Enfance &amp; éducation</h3><p>Inscriptions scolaires, cantine, périscolaire.</p></a>
-    <a class="card reveal" href="#"><span class="ico">🏠</span><h3>Urbanisme &amp; logement</h3><p>Permis, déclarations de travaux, aides.</p></a>
-    <a class="card reveal" href="#"><span class="ico">♻️</span><h3>Propreté &amp; déchets</h3><p>Collectes, déchèteries, encombrants.</p></a>
-    <a class="card reveal" href="#"><span class="ico">🚌</span><h3>Mobilité</h3><p>Transports, stationnement, mobilités douces.</p></a>
-    <a class="card reveal" href="#"><span class="ico">🛡️</span><h3>Sécurité &amp; tranquillité</h3><p>Police municipale, signalements, prévention.</p></a>
-    <a class="card reveal" href="#"><span class="ico">🤝</span><h3>Solidarité &amp; seniors</h3><p>CCAS, aides sociales, accompagnement.</p></a>
-    <a class="card reveal" href="#"><span class="ico">⚽</span><h3>Sport, culture &amp; vie associative</h3><p>Équipements, associations, salles.</p></a>
+    <a class="card reveal" href="https://villefontaine.fr"><span class="ico">👨‍👩‍👧</span><h3>Portail Famille</h3><p>Cantine, périscolaire, crèche : inscriptions et paiements.</p></a>
+    <a class="card reveal" href="https://villefontaine.fr"><span class="ico">🪪</span><h3>Espace Citoyen</h3><p>État civil, démarches administratives, demandes en ligne.</p></a>
+    <a class="card reveal" href="https://villefontaine.fr"><span class="ico">📒</span><h3>Annuaire</h3><p>Commerces, associations, professionnels de santé.</p></a>
+    <a class="card reveal" href="#participer"><span class="ico">🗳️</span><h3>Budget participatif</h3><p>Proposez et votez les projets de votre quartier.</p></a>
+    <a class="card reveal" href="https://villefontaine.fr"><span class="ico">🏡</span><h3>Maisons Pour Tous</h3><p>Activités, accompagnement et animations de proximité.</p></a>
+    <a class="card reveal" href="#sortir"><span class="ico">🤝</span><h3>Vie associative</h3><p>Associations, subventions, réservation de salles.</p></a>
+    <a class="card reveal" href="https://villefontaine.fr"><span class="ico">🧓</span><h3>Le Phare</h3><p>Espace dédié aux séniors : activités et services.</p></a>
+    <a class="card reveal" href="#contact"><span class="ico">✉️</span><h3>Contacter la mairie</h3><p>Une question ? Nous vous répondons.</p></a>
+  </div>
+</section>
+
+<section class="rubriques" id="vie-municipale">
+  <div class="wrap">
+    <div class="section-head reveal"><h2>La ville, rubrique par rubrique</h2><p>Retrouvez toute l’information municipale.</p></div>
+    <div class="rub-grid">
+      <div class="rub reveal" id="vie-mun"><h3>Vie municipale &amp; citoyenne</h3><ul><li>La mairie et ses services</li><li><a href="elus.html">Conseil municipal &amp; élus</a></li><li>Engagements 2026-2032</li><li>Budget &amp; marchés publics</li><li>Villefontaine Le Mag</li></ul></div>
+      <div class="rub reveal" id="decouvrir"><h3>Découvrir la ville</h3><ul><li>Attractivité économique</li><li>Commerces &amp; innovation</li><li>Portraits d’habitants</li><li>Galerie d’images</li></ul></div>
+      <div class="rub reveal"><h3>Vie quotidienne</h3><ul><li>Famille &amp; enfance</li><li>Jeunesse</li><li>Séniors</li><li>Mobilité &amp; stationnement</li><li>Santé &amp; solidarité (CCAS)</li><li>Emploi &amp; insertion</li></ul></div>
+      <div class="rub reveal" id="cadre"><h3>Cadre de vie</h3><ul><li>Logement &amp; urbanisme</li><li>Tranquillité publique</li><li>Propreté &amp; travaux</li><li>Accessibilité</li><li>Tourisme &amp; patrimoine</li></ul></div>
+      <div class="rub reveal" id="sortir"><h3>Sortir &amp; bouger</h3><ul><li>Culture</li><li>Sport</li><li>Associations</li></ul></div>
+      <div class="rub reveal" id="participer"><h3>Participer</h3><ul><li>Budget participatif</li><li>Instances citoyennes</li><li>Conseil municipal des enfants</li><li>Permanences des élus</li></ul></div>
+    </div>
   </div>
 </section>
 
 <section class="maire" id="maire">
   <div class="wrap maire-grid">
     <figure class="maire-photo reveal">
-      <img src="assets/maire-officiel.jpg" alt="Portrait officiel de Maxime Didier devant les fanions tricolores" loading="lazy" width="900" height="1489">
+      <img src="assets/maire-officiel.webp" alt="Portrait officiel de Maxime Didier devant les fanions tricolores" loading="lazy" width="900" height="1489">
     </figure>
     <div class="reveal">
       <p class="eyebrow light">Le mot du maire</p>
@@ -95,9 +108,9 @@
   <div class="news">
     <article class="news-big reveal">
       <span class="tag">Citoyenneté</span>
-      <h3>Lancement du nouveau portail citoyen</h3>
-      <p>Toutes vos démarches en ligne, 24h/24, depuis votre téléphone ou votre ordinateur.</p>
-      <a class="more" href="#">Lire la suite →</a>
+      <h3>Une équipe municipale à votre écoute</h3>
+      <p>Découvrez les élus du conseil municipal et leurs engagements 2026-2032.</p>
+      <a class="more" href="elus.html">Rencontrer l’équipe →</a>
     </article>
     <article class="news-item reveal"><span class="tag blue">Travaux</span><h3>Rénovation des cheminements piétons</h3><p>Un programme pour sécuriser les trajets du quotidien.</p><a class="more" href="#">Lire →</a></article>
     <article class="news-item reveal"><span class="tag red">Jeunesse</span><h3>Conseil municipal des jeunes</h3><p>Les candidatures sont ouvertes pour les 11-17 ans.</p><a class="more" href="#">Lire →</a></article>
@@ -120,7 +133,7 @@
 <section class="wrap" id="agenda">
   <div class="section-head reveal"><h2>Agenda</h2><p>Les prochains rendez-vous.</p></div>
   <ul class="agenda">
-    <li class="reveal"><time><b>08</b>NOV</time><div><h3>Conseil municipal</h3><p>Séance publique · Hôtel de ville</p></div><a class="btn ghost small" href="#">Détails</a></li>
+    <li class="reveal"><time><b>08</b>NOV</time><div><h3>Conseil municipal</h3><p>Séance publique · Salon d’honneur, Hôtel de ville</p></div><a class="btn ghost small" href="#">Détails</a></li>
     <li class="reveal"><time><b>11</b>NOV</time><div><h3>Cérémonie de commémoration</h3><p>Rassemblement devant le monument aux morts</p></div><a class="btn ghost small" href="#">Détails</a></li>
     <li class="reveal"><time><b>22</b>NOV</time><div><h3>Rencontre avec le maire</h3><p>Permanence ouverte aux habitants · sans rendez-vous</p></div><a class="btn ghost small" href="#">Détails</a></li>
     <li class="reveal"><time><b>13</b>DÉC</time><div><h3>Marché de Noël</h3><p>Animations, artisans et producteurs locaux</p></div><a class="btn ghost small" href="#">Détails</a></li>
@@ -133,9 +146,10 @@
       <h2>Contacter la mairie</h2>
       <p>Une question, une idée, un signalement ? Écrivez-nous, nous vous répondons rapidement.</p>
       <dl>
-        <dt>Adresse</dt><dd>Hôtel de ville · 38090 Villefontaine</dd>
-        <dt>Horaires</dt><dd>Lundi – vendredi : 8h30 – 12h / 13h30 – 17h30</dd>
-        <dt>Rendez-vous avec le maire</dt><dd>Sur demande via le formulaire</dd>
+        <dt>Adresse</dt><dd>Hôtel de ville · Place Pierre Mendès France, BP 88<br>38093 Villefontaine Cedex</dd>
+        <dt>Téléphone</dt><dd>04 74 96 00 00</dd>
+        <dt>Accueil sur rendez-vous</dt><dd>Lun., mar., mer., ven. : 8h30–12h / 13h30–17h<br>Jeudi : 10h30–12h / 13h30–17h<br>1<sup>er</sup> samedi du mois : 8h30–12h</dd>
+        <dt>Permanences des élus</dt><dd>Un samedi par mois à l’hôtel de ville, sur inscription par e-mail</dd>
       </dl>
     </div>
     <form class="form reveal" id="form">
@@ -153,7 +167,7 @@
 <footer>
   <div class="wrap foot">
     <div><strong>Villefontaine</strong><br><small>Maquette non officielle · © 2026 Maxime Didier</small></div>
-    <nav aria-label="Pied de page"><a href="#">Mentions légales</a><a href="#">Accessibilité</a><a href="#">Données personnelles</a><a href="#top">Haut de page ↑</a></nav>
+    <nav aria-label="Pied de page"><a href="elus.html">Les élus</a><a href="#">Mentions légales</a><a href="#">Accessibilité</a><a href="#">Données personnelles</a><a href="#top">Haut de page ↑</a></nav>
   </div>
 </footer>
 
